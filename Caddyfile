@@ -1,2 +1,4 @@
-{$SERVE}
-tls off
+:{$PORT}
+
+encode zstd gzip
+file_server

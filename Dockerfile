@@ -8,15 +8,9 @@ RUN npm run build
 
 # ---
 
+FROM caddy:2.1.1-alpine
+WORKDIR /usr/share/caddy
+
 ENV PORT 80
-
-FROM node:14.11.0-alpine
-WORKDIR /opt/game-machine
-
 COPY --from=build /build/www ./
-COPY --from=build /build/Caddyfile .
-
-RUN export SERVE=0.0.0.0:$PORT
-RUN apk add caddy
-
-ENTRYPOINT ["caddy", "run"]
+COPY --from=build /build/Caddyfile /etc/caddy/Caddyfile
