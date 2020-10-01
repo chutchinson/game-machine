@@ -8,6 +8,8 @@ RUN npm run build
 
 # ---
 
+ENV PORT 80
+
 FROM node:14.11.0-alpine
 WORKDIR /opt/game-machine
 
