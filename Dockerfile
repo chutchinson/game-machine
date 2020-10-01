@@ -16,6 +16,7 @@ WORKDIR /opt/game-machine
 COPY --from=build /build/www ./
 COPY --from=build /build/Caddyfile .
 
+RUN export SERVE=0.0.0.0:$PORT
 RUN apk add caddy
 
-ENTRYPOINT ["caddy"]
+ENTRYPOINT ["caddy", "run"]
