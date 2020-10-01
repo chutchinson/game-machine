@@ -12,7 +12,7 @@ FROM node:14.11.0-alpine
 WORKDIR /opt/game-machine
 
 COPY --from=build /build/www ./
-COPY --from=build Caddyfile .
+COPY --from=build /build/Caddyfile .
 
 RUN apk add caddy
 
