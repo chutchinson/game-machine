@@ -1,0 +1,22 @@
+{
+    "include": ["src"],
+    "exclude": ["node_modules"],
+    "compileOnSave": false,
+    "compilerOptions": {
+        "charset": "utf-8",
+        "strict": true,
+        "experimentalDecorators": true,
+        "esModuleInterop": true,
+        "resolveJsonModule": true,
+        "target": "esnext",
+        "module": "esnext",
+        "moduleResolution": "node",
+        "jsx": "react",
+        "jsxFactory": "h",
+        "baseUrl": ".",
+        "lib": [
+            "dom",
+            "esnext"
+        ]
+    }
+}

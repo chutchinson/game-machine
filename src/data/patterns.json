@@ -1,0 +1,11 @@
+{
+    "patterns": [
+        "{adjective} {theme}",
+        "{adjective} {style} game",
+        "{adjective} {genre} game",
+        "{adjective} {genre} {theme} game",
+        "{style} {adjective} {genre} {theme} game",
+        "{style} {adjective} {genre} game with {adjective} {theme}",
+        "{style} {adjective} {genre} game with {adjective} {theme} and {adjective} {theme}"
+    ]
+}

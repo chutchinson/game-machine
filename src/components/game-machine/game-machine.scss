@@ -1,0 +1,38 @@
+game-machine {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: rgba(0, 0, 2, 0.98);
+    color: #fff;
+    font-size: 2.5rem;
+    overflow: hidden;
+}
+
+game-machine > header {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 1rem;
+    margin-top: 1ch;
+    margin-left: 1ch;
+    user-select: none;
+}
+
+game-machine > .content {
+    width: 70vw;
+    overflow-x: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    border-radius: 0.25ch;
+}
+
+game-machine > .help {
+    margin-top: 1em;
+    height: 1em;
+    color: #555;
+}
