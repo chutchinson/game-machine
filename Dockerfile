@@ -12,7 +12,8 @@ FROM node:14.11.0-alpine
 WORKDIR /opt/game-machine
 
 COPY --from=build /build/www ./
-RUN npm install -g serve
+COPY --from=build Caddyfile .
 
-EXPOSE 5000
-ENTRYPOINT ["serve"]
+RUN apk add caddy
+
+ENTRYPOINT ["caddy"]
