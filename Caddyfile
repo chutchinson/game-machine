@@ -1,1 +1,2 @@
-:{env.PORT}
+0.0.0.0:$PORT
+tls off
